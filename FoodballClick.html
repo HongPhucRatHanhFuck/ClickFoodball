@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<img id="myImg" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/3b54f7e2-9747-4e47-99cb-3bc0afc2f08f/d78uqvj-f9f0af7e-6cb8-41a6-b9ac-5f0277015c8b.png/v1/fill/w_512,h_512/bleach_circle_icon_by_knives_by_knives1024_d78uqvj-fullview.png">
+<p>Click button below to move the image to right</p>
+<button onclick="moveRight()">Click me</button>
+<script>
+	let imgObj = null;
+	function init(){
+		imgObj=document.getElementById("myImg");
+		imgObj.style.position= "relative";
+		imgObj.style.left = "0px";
+	}
+	function moveRight(){
+		imgObj.style.left = parseInt(imgObj.style.left) + 10 + "px";
+	}
+	window.onload = init;
+</script>
+</body>
+</html>
